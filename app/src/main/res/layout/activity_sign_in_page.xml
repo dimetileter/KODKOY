@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/signIn_page_background"
+    android:id="@+id/SignInPageLayout"
+    tools:context=".view.SignInPage">
+
+    <TextView
+        android:id="@+id/txtv_sign_in_baslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:shadowColor="@color/black"
+        android:shadowDx="12"
+        android:shadowDy="12"
+        android:shadowRadius="2.5"
+        android:text="@string/KODKOY"
+        android:textColor="@color/theme_text_color"
+        android:textSize="64sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="217dp"
+        android:layout_height="0dp"
+        android:alpha="0.25"
+        android:fontFamily="@font/fira_code_light"
+        android:text="@string/bineary_mesaj"
+        android:textColor="@color/sıgnIn_page_binary_text"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fira_code"
+        android:text="@string/hesap_olustur"
+        android:textColor="@color/theme_text_color"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtv_sign_in_baslik"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etxt_register_nickname"
+        style="@style/edit_text_font"
+        android:layout_width="351dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/login_items"
+        android:fontFamily="@font/fira_code_light"
+        android:paddingStart="45dp"
+        android:textColor="@color/theme_text_color"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/etxt_register_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fira_code"
+        android:text="@string/isim"
+        android:textColor="@color/theme_text_color"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/fira_code_light"
+        android:text="@string/isim_simge"
+        android:textAlignment="center"
+        android:textColor="@color/theme_text_color"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/etxt_register_nickname"
+        app:layout_constraintStart_toStartOf="@+id/etxt_register_nickname"
+        app:layout_constraintTop_toTopOf="@+id/etxt_register_nickname" />
+
+    <EditText
+        android:id="@+id/etxt_register_email"
+        style="@style/edit_text_font"
+        android:layout_width="351dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/login_items"
+        android:inputType="textEmailAddress"
+        android:paddingStart="45dp"
+        android:textColor="@color/theme_text_color"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/etxt_register_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fira_code"
+        android:text="@string/email"
+        android:textColor="@color/theme_text_color"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/fira_code_light"
+        android:text="@string/email_simge"
+        android:textAlignment="center"
+        android:textColor="@color/theme_text_color"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/etxt_register_email"
+        app:layout_constraintStart_toStartOf="@+id/etxt_register_email"
+        app:layout_constraintTop_toTopOf="@+id/etxt_register_email" />
+
+
+    <EditText
+        android:id="@+id/etxt_register_password"
+        style="@style/edit_text_font"
+        android:layout_width="351dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/login_items"
+        android:inputType="numberPassword"
+        android:paddingStart="45dp"
+        android:textColor="@color/theme_text_color"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_hesap_olustur"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fira_code"
+        android:text="@string/sifre"
+        android:textColor="@color/theme_text_color"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/fira_code_light"
+        android:text="@string/sifre_simge"
+        android:textAlignment="center"
+        android:textColor="@color/theme_text_color"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/etxt_register_password"
+        app:layout_constraintStart_toStartOf="@+id/etxt_register_password"
+        app:layout_constraintTop_toTopOf="@+id/etxt_register_password" />
+
+    <Button
+        android:id="@+id/btn_hesap_olustur"
+        android:layout_width="167dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/buyuk_butonlar"
+        android:fontFamily="@font/fira_code_semibold"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:onClick="btn_hesapOlustur"
+        android:text="@string/hesap_olustur_buyuk"
+        android:textColor="@color/theme_text_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

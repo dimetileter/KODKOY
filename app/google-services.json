@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "532151305287",
+    "project_id": "kodkoy-9b541",
+    "storage_bucket": "kodkoy-9b541.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532151305287:android:e444af4a659dfe718f9d62",
+        "android_client_info": {
+          "package_name": "com.aliosman.paylasimuygulamasi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKC9sOIY8vk_YcNfh7jntAoNlI-DlI1Lg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

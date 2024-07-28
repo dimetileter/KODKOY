@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="edit_text_font" parent="Widget.AppCompat.EditText">
+        <item name="android:fontFamily">@font/fira_code_light</item>
+    </style>
+
+
+
+
+</resources>

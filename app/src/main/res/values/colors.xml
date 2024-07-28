@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="login_page_background">#0D241E</color>
+    <color name="signIn_page_background">#1C2017</color>
+    <color name="main_page_background">#17201B</color>
+    <color name="login_page_binary_text">#229BB6</color>
+    <color name="sıgnIn_page_binary_text">#B6B022</color>
+    <color name="theme_text_color">#BADBD7</color>
+    <color name="login_item_color">#734B545D</color>
+    <color name="main_page_images">#4B545D</color>
+</resources>
